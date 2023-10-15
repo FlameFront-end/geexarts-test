@@ -24,12 +24,12 @@
   }
 }
 
-.links {
+.filter {
   display: flex;
   gap: 24px;
   align-items: center;
 
-  a {
+  button {
     color: rgb(255 255 255 / 50%);
     font-size: 14px;
     font-family: "PT Root UI VF", sans-serif;

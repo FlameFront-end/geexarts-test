@@ -13,14 +13,12 @@ const Header = ({ isHome }) => {
 			</a>
 			{isHome ? (
 				<div className={s.right}>
-					<div className={s.links}>
-						<a href='' className={s.active}>
-							All
-						</a>
-						<a href=''>Stocks</a>
-						<a href=''>ETFs</a>
-						<a href=''>Crypto</a>
-						<a href=''>NFTs</a>
+					<div className={s.filter}>
+						<button className={s.active}>All</button>
+						<button>Stocks</button>
+						<button>ETFs</button>
+						<button>Crypto</button>
+						<button>NFTs</button>
 					</div>
 				</div>
 			) : (

@@ -28,7 +28,7 @@ const Slider = ({ allItems }) => {
 						style={{
 							background: `url(${item.img})`,
 							backgroundRepeat: 'no-repeat',
-							backgroundPosition: 'center center',
+							backgroundPosition: 'center',
 							backgroundSize: 'cover'
 						}}
 					></SwiperSlide>

@@ -14,14 +14,14 @@
 
 .mySwiper {
   position: absolute !important;
-  top: 0;
+  bottom: 20px;
   right: 0;
   left: 0;
   width: 100%;
-  height: calc(100% - 90px - 20px);
+  height: calc(100% - 90px);
 }
 
+
 .swiper-wrapper {
-  margin-top: 90px;
   padding-left: 140px;
 }
