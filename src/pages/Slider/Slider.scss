@@ -5,8 +5,23 @@
 }
 
 .swiper-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: end;
   border-radius: 20px;
   transition: all 0.3s ease-in-out;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.slide-text {
+  padding-bottom: 32px;
+
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
 }
 
 .swiper-slide-prev {

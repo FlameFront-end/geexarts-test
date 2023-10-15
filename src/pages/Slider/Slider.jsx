@@ -29,12 +29,11 @@ const Slider = ({ allItems }) => {
 						<SwiperSlide
 							key={item.id}
 							style={{
-								background: `url(${item.img})`,
-								backgroundRepeat: 'no-repeat',
-								backgroundPosition: 'center',
-								backgroundSize: 'cover'
+								background: `url(${item.img})`
 							}}
-						></SwiperSlide>
+						>
+							<div className='slide-text'>Introduction</div>
+						</SwiperSlide>
 					))}
 				</Swiper>
 			</div>
