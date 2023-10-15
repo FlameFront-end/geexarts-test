@@ -36,7 +36,6 @@ const App = () => {
 	return (
 		<div className='app'>
 			<BrowserRouter>
-				<Sidebar />
 				<Routes>
 					<Route
 						path='/'

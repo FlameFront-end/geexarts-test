@@ -16,7 +16,7 @@ import Input from '../Input/Input.jsx'
 
 import s from './Sidebar.module.scss'
 
-const Sidebar = () => {
+const Sidebar = ({ isSlider }) => {
 	return (
 		<nav className={s.nav}>
 			<div>
@@ -31,20 +31,20 @@ const Sidebar = () => {
 				<Input />
 				<div className={s.main}>
 					<div className={s.heading}>Main</div>
-					<Link to='' className={s.link}>
+					<Link to='/' className={s.link}>
 						<div className={s.left}>
 							<img src={home} alt='Home' />
 							Home
 						</div>
 					</Link>
-					<Link to='' className={s.link}>
+					<Link to='/' className={s.link}>
 						<div className={s.left}>
 							<img src={play} alt='Play' />
 							Watch
 						</div>
 						<div className={s.num}>2</div>
 					</Link>
-					<Link to='' className={s.link}>
+					<Link to='/' className={s.link}>
 						<div className={s.left}>
 							<img src={community} alt='Community' />
 							Community
@@ -70,10 +70,14 @@ const Sidebar = () => {
 					<img src={help} alt='Help' />
 					Help
 				</a>
-				<div className={s.footer}>
-					<a href=''>Privacy & Policy</a>
-					<a href=''>Terms & Conditions</a>
-				</div>
+				{isSlider ? (
+					<div className={s.footer}>
+						<a href=''>Privacy & Policy</a>
+						<a href=''>Terms & Conditions</a>
+					</div>
+				) : (
+					''
+				)}
 			</div>
 		</nav>
 	)
