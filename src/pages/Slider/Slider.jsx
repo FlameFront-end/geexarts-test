@@ -60,18 +60,12 @@ const Slider = ({ allItems }) => {
 				</Swiper>
 			</div>
 			<div className='navigation'>
-				<img
-					src={arrow}
-					alt='arrow'
-					className='swiper-button-prev'
-					onClick={handlePrevButtonClick}
-				/>
-				<img
-					src={arrow}
-					alt='arrow'
-					className='swiper-button-next'
-					onClick={handleNextButtonClick}
-				/>
+				<button className='swiper-button-prev' onClick={handlePrevButtonClick}>
+					<img src={arrow} alt='arrow' />
+				</button>
+				<button className='swiper-button-next' onClick={handleNextButtonClick}>
+					<img src={arrow} alt='arrow' />
+				</button>
 			</div>
 		</div>
 	)
