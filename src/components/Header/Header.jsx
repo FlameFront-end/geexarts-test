@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import { arrow } from '../../assets/index.js'
 
@@ -7,10 +8,10 @@ import s from './Header.module.scss'
 const Header = ({ isHome }) => {
 	return (
 		<header className={s.header}>
-			<a href='' className={s.left}>
+			<Link to='/' className={s.left}>
 				<img src={arrow} alt='arrow' />
 				<h1 className={s.heading}>Academy</h1>
-			</a>
+			</Link>
 			{isHome ? (
 				<div className={s.right}>
 					<div className={s.filter}>
