@@ -1,0 +1,27 @@
+.swiper-slide {
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.swiper-slide-prev {
+  transform: rotate(-10deg) scale(0.7) !important;
+}
+
+.swiper-slide-next {
+  transform: rotate(10deg) scale(0.7) !important;
+}
+
+.mySwiper {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 90px - 20px);
+}
+
+.swiper-wrapper {
+  margin-top: 90px;
+  padding-left: 140px;
+}

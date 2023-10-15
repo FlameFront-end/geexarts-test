@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.app {
+  position: relative;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.slider {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(182deg, #ef7e3c 3.76%, #f5b048 60.76%, #f7c64d 85.52%);
+}
