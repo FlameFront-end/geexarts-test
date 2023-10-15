@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { useParams } from 'react-router-dom'
+import { Navigation } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 import Header from '../../components/Header/Header.jsx'
 import Sidebar from '../../components/Sidebar/Sidebar.jsx'
+
+import { arrow } from '../../assets/index.js'
 
 import './Slider.scss'
 
@@ -11,6 +14,19 @@ import 'swiper/css'
 
 const Slider = ({ allItems }) => {
 	let { id } = useParams()
+	const swiperRef = useRef(null)
+
+	const handleNextButtonClick = () => {
+		if (swiperRef.current) {
+			swiperRef.current.slideNext()
+		}
+	}
+
+	const handlePrevButtonClick = () => {
+		if (swiperRef.current) {
+			swiperRef.current.slidePrev()
+		}
+	}
 
 	return (
 		<div className='wrapper'>
@@ -24,6 +40,12 @@ const Slider = ({ allItems }) => {
 					initialSlide={id}
 					loop={true}
 					centeredSlides={true}
+					navigation={{
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev'
+					}}
+					modules={[Navigation]}
+					ref={swiperRef}
 				>
 					{allItems.map(item => (
 						<SwiperSlide
@@ -36,6 +58,20 @@ const Slider = ({ allItems }) => {
 						</SwiperSlide>
 					))}
 				</Swiper>
+			</div>
+			<div className='navigation'>
+				<img
+					src={arrow}
+					alt='arrow'
+					className='swiper-button-prev'
+					onClick={handlePrevButtonClick}
+				/>
+				<img
+					src={arrow}
+					alt='arrow'
+					className='swiper-button-next'
+					onClick={handleNextButtonClick}
+				/>
 			</div>
 		</div>
 	)

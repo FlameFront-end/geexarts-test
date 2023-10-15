@@ -44,3 +44,32 @@
 .swiper-wrapper {
   padding-left: 140px;
 }
+
+.navigation {
+  width: 68px;
+  height: 68px;
+  position: absolute;
+  left: 75%;
+  top: 35%;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  backdrop-filter: blur(20px);
+  display: flex;
+  align-items: center;
+  transition: transform .3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  flex: 1;
+  cursor: pointer;
+}
+
+.swiper-button-next {
+  transform: rotate(180deg);
+}
