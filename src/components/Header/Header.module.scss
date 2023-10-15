@@ -20,7 +20,7 @@
     font-weight: 700;
     font-size: 32px;
     font-family: "PT Root UI VF", sans-serif;
-    line-height: 32px; /* 100% */
+    line-height: 32px;
   }
 }
 
@@ -30,15 +30,20 @@
   align-items: center;
 
   button {
+    padding: 12px;
     color: rgb(255 255 255 / 50%);
     font-size: 14px;
     font-family: "PT Root UI VF", sans-serif;
+    border-radius: 22px;
+    transition: background 0.3s ease-in-out;
+
+    &:hover {
+      background: rgb(255 255 255 / 30%);
+    }
   }
 
   .active {
-    padding: 12px;
     background: rgb(255 255 255 / 10%);
-    border-radius: 22px;
     backdrop-filter: blur(4px);
   }
 }

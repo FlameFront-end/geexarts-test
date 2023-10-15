@@ -31,20 +31,20 @@ const Sidebar = () => {
 				<Input />
 				<div className={s.main}>
 					<div className={s.heading}>Main</div>
-					<a className={s.link} href=''>
+					<Link to='' className={s.link}>
 						<div className={s.left}>
 							<img src={home} alt='Home' />
 							Home
 						</div>
-					</a>
-					<a className={s.link} href=''>
+					</Link>
+					<Link to='' className={s.link}>
 						<div className={s.left}>
 							<img src={play} alt='Play' />
 							Watch
 						</div>
 						<div className={s.num}>2</div>
-					</a>
-					<a className={s.link} href=''>
+					</Link>
+					<Link to='' className={s.link}>
 						<div className={s.left}>
 							<img src={community} alt='Community' />
 							Community
@@ -62,7 +62,7 @@ const Sidebar = () => {
 								style={{ position: 'absolute', top: 0, left: 25, zIndex: 20 }}
 							/>
 						</div>
-					</a>
+					</Link>
 				</div>
 			</div>
 			<div className={s.bottom}>

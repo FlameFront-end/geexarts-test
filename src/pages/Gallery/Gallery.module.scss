@@ -40,6 +40,7 @@
 
 .card_wrapper {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   justify-content: space-between;
   margin-top: 20px;
@@ -92,8 +93,10 @@
 
   .card_bottom {
     font-size: 18px;
-
-    /* Body/L/B */
     font-family: " PT Root UI VF", sans-serif;
   }
+}
+
+.trending {
+  margin-top: 46px;
 }

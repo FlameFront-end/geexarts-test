@@ -35,13 +35,14 @@ const App = () => {
 
 	return (
 		<div className='app'>
-			<Sidebar />
 			<BrowserRouter>
+				<Sidebar />
 				<Routes>
 					<Route
 						path='/'
 						element={<Gallery newPlaylist={newPlaylist} trending={trending} />}
 					/>
+					<Route path='/slider' element={<Slider allItems={allItems} />} />
 					<Route path='/slider/:id' element={<Slider allItems={allItems} />} />
 				</Routes>
 			</BrowserRouter>
