@@ -63,6 +63,7 @@ const Sidebar = ({ isSlider }) => {
 							/>
 						</div>
 					</Link>
+					<div className={s.line}></div>
 				</div>
 			</div>
 			<div className={s.bottom}>
