@@ -1,4 +1,16 @@
-@import "./fonts/PT-Root/RT-Root";
+@font-face {
+  font-weight: normal;
+  font-family: "PT Root UI VF";
+  font-style: normal;
+  src: local('PT-Root-UI_VF'), url("./fonts/PT-ROOT/PT-Root-UI_VF.ttf") format("ttf");
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: "RG-StandardBold";
+  font-style: normal;
+  src: local('RG-StandardBold'), url("./fonts/RG/RG-StandardBold.ttf") format("ttf");
+}
 
 * {
   box-sizing: border-box;
